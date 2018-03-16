@@ -68,6 +68,22 @@ public class Solution {
                                     (r.getName().getLocalPart().equals("TEMPERATURE"))) {
                                 forecast.setMaxTemperature(Integer.parseInt(r.getAttributeValue(i)));
                             }
+                            if ((r.getAttributeName(i).getLocalPart().equals("max")) &
+                                    (r.getName().getLocalPart().equals("WIND"))) {
+                                forecast.setMaxWind(Integer.parseInt(r.getAttributeValue(i)));
+                            }
+                            if ((r.getAttributeName(i).getLocalPart().equals("min")) &
+                                    (r.getName().getLocalPart().equals("WIND"))) {
+                                forecast.setMinWind(Integer.parseInt(r.getAttributeValue(i)));
+                            }
+                            if ((r.getAttributeName(i).getLocalPart().equals("min")) &
+                                    (r.getName().getLocalPart().equals("RELWET"))) {
+                                forecast.setMinRelwet(Integer.parseInt(r.getAttributeValue(i)));
+                            }
+                            if ((r.getAttributeName(i).getLocalPart().equals("max")) &
+                                    (r.getName().getLocalPart().equals("RELWET"))) {
+                                forecast.setMaxRelwet(Integer.parseInt(r.getAttributeValue(i)));
+                            }
 
 
                         }

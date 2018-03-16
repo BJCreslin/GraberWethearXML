@@ -87,6 +87,44 @@ public class Forecast {
     }
 
     private int maxTemperature;
+    private int maxWind;
+
+    public int getMaxWind() {
+        return maxWind;
+    }
+
+    public void setMaxWind(int maxWind) {
+        this.maxWind = maxWind;
+    }
+
+    public int getMinWind() {
+        return minWind;
+    }
+
+    public void setMinWind(int minWind) {
+        this.minWind = minWind;
+    }
+
+    private int minWind;
+    private int minRelwet;
+
+    public int getMinRelwet() {
+        return minRelwet;
+    }
+
+    public void setMinRelwet(int minRelwet) {
+        this.minRelwet = minRelwet;
+    }
+
+    public int getMaxRelwet() {
+        return maxRelwet;
+    }
+
+    public void setMaxRelwet(int maxRelwet) {
+        this.maxRelwet = maxRelwet;
+    }
+
+    private int maxRelwet;
 
     @Override
     public String toString() {
@@ -100,9 +138,14 @@ public class Forecast {
                 ", minPressure=" + minPressure +
                 ", minTemperature=" + minTemperature +
                 ", maxTemperature=" + maxTemperature +
+                ", maxWind=" + maxWind +
+                ", minWind=" + minWind +
+                ", minRelwet=" + minRelwet +
+                ", maxRelwet=" + maxRelwet +
                 '}';
     }
-//    Attribute: tod=2
+
+    //    Attribute: tod=2
 //    Attribute: predict=0
 //    Attribute: weekday=6
 //    Start Element: PHENOMENA
